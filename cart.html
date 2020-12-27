@@ -1,0 +1,162 @@
+
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+    <!-- ==============cart starts here============== -->
+    <section class="cart py-5 my-5" id="cart">
+        <div class="container ">
+            <div class="section_title text-center mb-5">
+                <h1 class="text-capitalize">Cart</h1>
+            </div>
+            <div class="row bg_cart_1 rounded">
+                <!--Grid column-->
+                <div class="col-md-8 border-right">
+                    <!-- Card -->
+                    <div class="mb-3">
+                        <div class="pt-4">
+                            <h5 class="mb-4">Cart (<span>2</span> items)</h5>
+                            <div class="row mb-4">
+                                <div class="col-md-5 col-lg-3 col-xl-3">
+                                    <div class="rounded mb-3 mb-md-0">
+                                        <img class="img-fluid w-100 rounded" src="https://cdn.vox-cdn.com/thumbor/JrU6ckIhkT2A7N1cM4X0G0EpJ4U=/0x0:2080x1387/1200x800/filters:focal(874x528:1206x860)/cdn.vox-cdn.com/uploads/chorus_image/image/64932635/DSCF2473.0.5.jpg"
+                                            alt="Sample">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-lg-9 col-xl-9">
+                                    <div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h5>Samsung laptop</h5>
+                                                <p class="mb-3 text-muted text-uppercase small">laptop - gray</p>
+                                                <p class="mb-2 text-muted text-uppercase small">Color: gray</p>
+                                                <p class="mb-3 text-muted text-uppercase small">Size:(mm)339 x 235 x 24.3 , (inches) 13.35" x 9.25" x 0.96"</p>
+                                            </div>
+                                            <div>
+                                                <div class="mb-0 w-100">
+                                                    <button
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                                        class="btn btn-sm btn-outline-primary">
+                                                        <i class="fas fa-minus"></i>
+                                                    </button>
+                                                    <input class="quantity text-center" min="0" max="10" name="quantity"
+                                                        value="1" type="number">
+                                                    <button
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                                        class="btn btn-sm btn-outline-primary">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                                <small class="form-text text-muted text-center">
+                                                    (Note, 1 piece)
+                                                </small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <a href="javascript:;" type="button"
+                                                    class="small text-uppercase mr-3"><i
+                                                        class="fas fa-trash-alt mr-1"></i> Remove item </a>
+                                            </div>
+                                            <p class="mb-0"><span><strong id="summary">₹48,000</strong></span></p
+                                                class="mb-0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mb-4">
+                            <div class="row mb-4">
+                                <div class="col-md-5 col-lg-3 col-xl-3">
+                                    <div class="rounded mb-3 mb-md-0">
+                                        <img class="img-fluid w-100 rounded" src="https://img.router-switch.com/media/customoptions/40/1/1/oppo-reno4-5g-blue.jpg"
+                                            alt="Sample">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-lg-9 col-xl-9">
+                                    <div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h5>Samsung phone</h5>
+                                                <p class="mb-3 text-muted text-uppercase small">Phone - red</p>
+                                                <p class="mb-2 text-muted text-uppercase small">Color: red</p>
+                                                <p class="mb-3 text-muted text-uppercase small">Size: 148.9 x 68.1 x 8 mm</p>
+                                            </div>
+                                            <div>
+                                                <div class="mb-0 w-100">
+                                                    <button
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                                        class="btn btn-sm btn-outline-primary">
+                                                        <i class="fas fa-minus"></i>
+                                                    </button>
+                                                    <input class="quantity text-center" min="0" max="10" name="quantity"
+                                                        value="1" type="number">
+                                                    <button
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                                        class="btn btn-sm btn-outline-primary">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <a href="javascript:;" type="button"
+                                                    class="card-link-secondary small text-uppercase mr-3">
+                                                    <i class="fas fa-trash-alt mr-1"></i> Remove item
+                                                </a>
+                                            </div>
+                                            <p class="mb-0"><span><strong>₹15,000</strong></span></p class="mb-0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4  rounded">
+                    <!-- Card -->
+                    <div class="mb-3">
+                        <div class="pt-4">
+                            <h5 class="mb-3">Order summary</h5>
+                            <ul class="list-group list-group-flush">
+                                <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
+                                    <span>Samsung Laptop</span>
+                                    <span>x1</span>
+                                    <span>₹48,000</span>
+                                </li>
+                                <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
+                                    <span>Samsung Phone</span>
+                                    <span>x1</span>
+                                    <span>₹15,000</span>
+                                </li>
+                                <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-top px-0 mb-3">
+                                    <div>
+                                        <strong>Total amount</strong>
+                                        <strong>
+                                            <p class="mb-0">(including VAT)</p>
+                                        </strong>
+                                    </div>
+                                    <span><strong>₹63,000</strong></span>
+                                </li>
+                            </ul>
+                            <a href="/checkout" class="btn btn-primary btn-block">Go to Checkout</a>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                </div>
+                <!--Grid column-->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============cart ends here============== -->
+
+    
+{% endblock %}

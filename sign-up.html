@@ -1,0 +1,96 @@
+
+{% extends "layout.html" %}
+{% block body %}
+
+
+    <div class="row">
+                <div class="col-md-8 col-10 mx-auto mb-3 my-5 py-5 border shadow">
+                    <h3 class="text-center mb-3">SIGN-UP</h3>
+                    <form action="contact.html" method="POST" id="form" onsubmit="return formValidation();">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input name="name" id="name" type="text" placeholder="Username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Email address</label>
+                            <input name="email" id="email" type="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input name="password" id="password" type="password" placeholder="Password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input name="password" id="password" type="password" placeholder="Confirm Password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">SIGN UP</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer_section pt-5 pb-2" id="footer_section">
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-6 pl-5 pl-small-15">
+            <div class="footer_title">
+              <a href="index.html"><img src="assets/images/swaksha.png" width="150px" class="img img-fluid" alt="logo"></a>
+            </div>
+            <div>
+              Swaksha Shopping, your trusted brand for gadget shopping.
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>Quick Links</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="javascript:;">Offers & Discounts</a></li>
+                <li><a href="javascript:;">Get Coupon</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>New Products</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="javascript:;">Mac tablets</a></li>
+                <li><a href="javascript:;">Redmi Mobile</a></li>
+                <li><a href="javascript:;">Samsung Mobiles</a></li>
+                <li><a href="javascript:;">Laptops</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>Support</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                <li><a href="javascript:;">Terms & Conditions</a></li>
+                <li><a href="javascript:;">Privacy Policy</a></li>
+                <li><a href="javascript:;">Report a Payment Issue</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top">
+        <h6 class="text-center mt-3">Copyright ©2020 All rights reserved
+        </h6>
+      </div>
+    </footer>
+  </section>
+  <div class="backtop">
+    <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+      <i class="fas fa-chevron-up text-dark"></i>
+    </a>
+  </div>
+  {% endblock %}

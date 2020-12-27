@@ -1,0 +1,78 @@
+
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+    <!-- ==============search section ends here============== -->
+
+    <section class="search_section py-5 my-5" id="search_section">
+        <div class="container">
+            <div class="title text-center mb-5">
+                <h2><i class="far fa-file mr-2"></i>Search</h2>
+            </div>
+            <div class="row">
+                <!-- BEGIN RESULT -->
+                <div class="col-md-10 mx-auto">
+                    <!-- BEGIN SEARCH INPUT -->
+                    <div class="input-group">
+                        <input type="text" class="form-control" value="xyz">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                    <!-- END SEARCH INPUT -->
+                    <small>Showing all results matching "xyz"</small>
+
+                    <!-- BEGIN TABLE RESULT -->
+                    <div class="table-responsive mt-3">
+                        <table class="table table-hover">
+                            <tbody class="border-bottom">
+                                <tr>
+                                    <td class="number text-center">1</td>
+                                    <td class="image"><img src="https://4.imimg.com/data4/XF/XT/MY-13223178/samsung-laptop-500x500.jpg" width="100px"
+                                            class="img img-fluid" alt=""></td>
+                                    <td class="product"><strong>Samsung Laptop</strong><br>60GB internal memory |Windows OS
+                                    </td>
+                                    <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                                    <td class="price text-right">₹35000</td>
+                                </tr>
+                                <tr>
+                                    <td class="number text-center">2</td>
+                                    <td class="image"><img src="https://cms.qz.com/wp-content/uploads/2019/08/Samsung-Galaxy-Note10-Plus-review.jpg?quality=75&strip=all&w=900&h=900&crop=1" width="100px"
+                                            class="img img-fluid" alt=""></td>
+                                    <td class="product"><strong>Samsung Galaxy Note 10+</strong><br>32GB internal memory |dual sim
+                                    </td>
+                                    <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                                    <td class="price text-right">₹20000</td>
+                                </tr>
+                                <tr>
+                                    <td class="number text-center">3</td>
+                                    <td class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSzLTYiWX8vyGJxfBn14yhAKKYfZ-0uAmWumg&usqp=CAU" width="100px"
+                                            class="img img-fluid" alt=""></td>
+                                    <td class="product"><strong>Oppo A31</strong><br>16GB internal memory |dual sim
+                                    </td>
+                                    <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                                    <td class="price text-right">₹13000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END TABLE RESULT -->
+                </div>
+                <!-- END RESULT -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============search section ends here============== -->
+
+
+
+    {% endblock %}

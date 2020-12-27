@@ -1,0 +1,186 @@
+
+{% extends "layout.html" %}
+{% block body %}
+
+
+    <!-- ==============products starts here============== -->
+    <section class="products py-5 my-5" id="products">
+        <div class="container ">
+            <div class="section_title text-center mb-5">
+                <h1 class="text-capitalize">Products</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3 border-right mb-small-5">
+                    <h4 class="mb-5 border-bottom">Filters</h4>
+                    <div class="mb-5">
+                        <label><b>Category</b></label>
+                        <ul class="list-group">
+                            <li class="list-group-item">Category 1</li>
+                            <li class="list-group-item">Category 2</li>
+                            <li class="list-group-item">Category 3</li>
+                            <li class="list-group-item">Category 4</li>
+                            <li class="list-group-item">Category 5</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="form-group">
+                                <label><b>Price</b></label>
+                                <input type="range" min="100" max="1000" step="100" class="form-control-range">
+                            </div>
+                        </form>
+                        <div class="d-flex justify-content-between">
+                            <label>₹100</label>
+                            <label>₹1000</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row mb-5">
+                        <div class="col-md-4 col-12">
+                            <div class="single_product shadow text-center p-1">
+                                <div class="product_img">
+                                    <a href="/product_detail"><img src="https://4.imimg.com/data4/XF/XT/MY-13223178/samsung-laptop-500x500.jpg" class="img img-fluid"
+                                            alt=""></a>
+                                </div>
+                                <div class="product-caption my-3">
+                                    <div class="product-ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h5><a href="/product_detail">Samsung A laptop</a></h5>
+                                    <div class="price">
+                                        <b><span class="mr-1">₹</span><span>47,500</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5">
+                                <div class="product_img">
+                                    <a href="/product_detail"><img src="https://www.notebookcheck.net/uploads/tx_nbc2/AcerAspire5A515-44__1_.JPG" class="img img-fluid"
+                                            alt=""></a>
+                                    <div class="new_product">
+                                        <span class="badge py-2 px-3 badge-pill badge-danger">New</span>
+                                    </div>
+                                </div>
+                                <div class="product-caption my-3">
+                                    <div class="product-ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h5><a href="/product_detail">Acer (2-in-1) laptop</a></h5>
+                                    <div class="price">
+                                        <b><span class="mr-1">₹</span><span>67,999</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="single_product shadow text-center p-1">
+                                <div class="product_img">
+                                    <a href="/product_detail"><img src="https://drop.ndtv.com/TECH/product_database/images/41201441652PM_635_sony_xperia_tablet_s_3g.jpeg" class="img img-fluid"
+                                            alt=""></a>
+                                    <div class="new_product">
+                                        <span class="badge py-2 px-3 badge-pill badge-danger">New</span>
+                                    </div>
+                                </div>
+                                <div class="product-caption my-3">
+                                    <div class="product-ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h5><a href="/product_detail">Sony tablet</a></h5>
+                                    <div class="price">
+                                        <b><span class="mr-1">₹</span><span>16,780</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="single_product shadow text-center p-1">
+                                <div class="product_img">
+                                    <a href="/product_detail"><img src="https://www.gizmochina.com/wp-content/uploads/2018/02/Samsung-Galaxy-Tab-A-7.0-2016-WiFi-SM-T280.jpg" class="img img-fluid"
+                                            alt=""></a>
+                                    <div class="new_product">
+                                        <span class="badge py-2 px-3 badge-pill badge-danger">New</span>
+                                    </div>
+                                </div>
+                                <div class="product-caption my-3">
+                                    <div class="product-ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h5><a href="/product_detail">Samsung pro 5</a></h5>
+                                    <div class="price">
+                                        <b><span class="mr-1">₹</span><span>16,690</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5">
+                                <div class="product_img">
+                                    <a href="/product_detail"><img src="https://images-na.ssl-images-amazon.com/images/I/71yXShgxvpL._SX679_.jpg" class="img img-fluid"
+                                            alt=""></a>
+                                    <div class="new_product">
+                                        <span class="badge py-2 px-3 badge-pill badge-danger">New</span>
+                                    </div>
+                                </div>
+                                <div class="product-caption my-3">
+                                    <div class="product-ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h5><a href="/product_detail">Redmi note 8 </a></h5>
+                                    <div class="price">
+                                        <b><span class="mr-1">₹</span><span>18,990</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="single_product shadow text-center p-1">
+                                <div class="product_img">
+                                    <a href="/product_detail"><img src="https://www.gizmochina.com/wp-content/uploads/2019/02/vivo-500x500.jpg" class="img img-fluid"
+                                            alt=""></a>
+                                </div>
+                                <div class="product-caption my-3">
+                                    <div class="product-ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h5><a href="/product_detail">Vivo 91</a></h5>
+                                    <div class="price">
+                                        <b><span class="mr-1">₹</span><span>20,480</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==============product ends here============== -->
+    {% endblock %}
