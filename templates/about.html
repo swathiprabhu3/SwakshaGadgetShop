@@ -1,4 +1,5 @@
 
+
 {% extends "layout.html" %}
 {% block body %}
 
@@ -48,7 +49,7 @@
                                     <div class="testimonial">
                                         <!--Avatar-->
                                         <div class="avatar mx-auto mb-4">
-                                            <img src="assets/images/about1.png" class="rounded-circle img-fluid"
+                                            <img src="{{url_for('static',filename='images/about1.png')}}" class="rounded-circle img-fluid"
                                                 alt="First sample avatar image">
                                         </div>
                                         <!--Content-->
@@ -71,7 +72,7 @@
                                     <div class="testimonial">
                                         <!--Avatar-->
                                         <div class="avatar mx-auto mb-4">
-                                            <img src="assets/images/sudhiksha.jpg" class="rounded-circle img-fluid"
+                                            <img src="{{url_for('static',filename='images/sudhiksha.jpg')}}" class="rounded-circle img-fluid"
                                                 alt="Second sample avatar image">
                                         </div>
                                         <!--Content-->
