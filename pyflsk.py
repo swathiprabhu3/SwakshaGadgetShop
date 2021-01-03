@@ -13,6 +13,7 @@ db = SQLAlchemy(app)
 
 
 
+
 class Contacts(db.Model):
     ''' sno name email mes date                                  '''
     sno = db.Column(db.Integer, primary_key=True)
@@ -32,7 +33,28 @@ class Checkout(db.Model):
     city= db.Column(db.String(20), nullable=False)
     date = db.Column(db.String(12), nullable=True)
 
+class Register(db.Model):
+    
+    sno = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(25), nullable=False)
+    phone = db.Column(db.Integer, nullable=True)
+    email = db.Column(db.String(20), nullable=False)
+    password=db.Column(db.String(20),nullable=False)
 
+class Payment(db.Model):
+    
+    sno = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(25), nullable=False)
+    card = db.Column(db.Integer, nullable=True)
+    cvv = db.Column(db.Integer, nullable=False)
+
+class Specification(db.Model):
+    
+    sno = db.Column(db.Integer, primary_key=True)
+    size = db.Column(db.Integer, nullable=False)
+    color = db.Column(db.String(25), nullable=True)
+    delivery = db.Column(db.String(25), nullable=False)
+    
 
 @app.route('/')
 def home():
@@ -59,24 +81,49 @@ def check():
         db.session.commit()
 
     return render_template('checkout.html')
-database={'nachi':'123','james':'aac','karthik':'asdsf'}
-@app.route('/login',methods=['POST','GET'])
-def login():
-    name1=request.form['username']
-    pwd=request.form['password']
-    if name1 not in database:
-	    return render_template('login.html',info='Invalid User')
-    else:
-        if database[name1]!=pwd:
-            return render_template('login.html',info='Invalid Password')
-        else:
-	         return render_template('index.html',name=name1)
-@app.route("/sign-up", methods=["GET", "POST"])
-def register():
- 
-    return render_template("sign-up.html")
 
-@app.route('/category')
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if(request.method=='POST'):
+        name=request.form.get('name')
+        email=request.form.get('email')
+        password=request.form.get('password')
+        phone=request.form.get('phone')
+
+        entry=Register(name=name,email=email,password=password,phone=phone)
+        db.session.add(entry)
+        db.session.commit()
+
+    return render_template("register.html")
+
+@app.route('/specification',methods=['GET','POST'])
+def specification():
+    if(request.method=='POST'):
+        size=request.form.get('size')
+        color=request.form.get('color')
+        delivery=request.form.get('delivery')
+        
+
+        entry=Specification(size=size,color=color,delivery=delivery)
+        db.session.add(entry)
+        db.session.commit()
+    return render_template('specification.html')
+
+@app.route('/payment',methods=['GET','POST'])
+def payment():
+    if(request.method=='POST'):
+        name=request.form.get('name')
+        card=request.form.get('card')
+        cvv=request.form.get('cvv')
+       
+        
+        entry=Payment(name=name,card=card,cvv=cvv)
+        db.session.add(entry)
+        db.session.commit()
+
+    return render_template('payment.html')
+
+@app.route('/category',methods=['GET','POST'])
 def category():
     return render_template('category.html')
 @app.route('/product_detail')
