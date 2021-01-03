@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+    <div class="row">
+                <div class="col-md-8 col-10 mx-auto mb-3 my-5 py-5 border shadow">
+                    <h3 class="text-center mb-3">Register</h3>
+                    <form action="register" method="POST" id="form" onsubmit="return formValidation();">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input name="name" id="name" type="text" placeholder="Username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Email address</label>
+                            <input name="email" id="email" type="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input name="password" id="password" type="password" placeholder="Password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone number</label>
+                            <input name="phone" id="phone" type="number" placeholder="Phone number" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        <a href="/checkout">Checkout form for purchasing!!,CLICK HERE</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+  {% endblock %}
