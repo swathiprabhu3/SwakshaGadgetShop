@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+    <div class="row">
+                <div class="col-md-8 col-10 mx-auto mb-3 my-5 py-5 border shadow">
+                    <h3 class="text-center mb-3">Specifications</h3>
+                    <form action="specification" method="POST" id="form" onsubmit="return formValidation();">
+                        <div class="form-group">
+                            <label>Enter the size for your product in inches</label>
+                            <input name="size" id="size" type="number" placeholder="eg,13 ,14 inches etc" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Color of the product</label>
+                            <input name="color" id="color" type="text" placeholder="eg,red,yellow etc" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Cash on delivery or online payment</label>
+                            <input name="delivery" id="delivery" type="text" placeholder="Enter the detail" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enter</button>
+                        <a href="/checkout">Checkout form for purchasing!!,CLICK HERE</a>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+   
+  {% endblock %}
