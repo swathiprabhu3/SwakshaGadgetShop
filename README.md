@@ -5,7 +5,6 @@
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
   <img src="http://ForTheBadge.com/images/badges/uses-html.svg">
   <img src="http://ForTheBadge.com/images/badges/uses-css.svg">
-  <img src="http://ForTheBadge.com/images/badges/uses-js.svg">
   <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat">
 </p>
 
