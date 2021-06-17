@@ -65,8 +65,3 @@ $ git clone https://github.com/swathiprabhu3/SwakshaGadgetShop.git
 [<img align="left" alt="SQLAlchemy" width="30px" src="https://www.fullstackpython.com/img/logos/sqlalchemy.jpg" />](#)
 
 <br><br>
-
-<!--  
-## License 📄
-
-This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details -->
