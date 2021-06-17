@@ -28,7 +28,7 @@ From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/swathiprabhu3/swakshagadgetshop.git
+$ git clone https://github.com/swathiprabhu3/SwakshaGadgetShop.git
 
 ```
 
